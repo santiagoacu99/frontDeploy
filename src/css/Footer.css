@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-conteiner{
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #09072c ;
+    padding-top: 5vh;
+    gap: 10vw;
+
+}
+.atencion{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vw;
+    align-items: flex-start;
+    gap: 3vh;
+  
+}
+.atencion h3{
+    color:  #35ffd2;
+    font-weight: 300;
+    font-size: 24px;
+}
+.atencion h4{
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+}
+.sendEmail{
+    display: flex;
+    
+    
+ 
+}
+.sendEmail input {
+    height:5vh;
+    width: 20vw; 
+    border: transparent;
+    
+}
+.sendEmail button{
+    height: 5vh;
+    width: 3vw;
+    background-color: #35ffd2;
+    color: #09072c;
+    border: transparent;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding-top: 2vh;
+    
+}
+.redes i{
+    color: #35ffd2;
+    font-size: 36px;
+}
+.redes i:hover{
+    scale: 1.1;
+}
+.dataF img{
+    width: 60%;
+    margin-bottom: 2vw;
+
+}
+@media screen and (max-width:480px){
+    .footer-conteiner{
+        flex-direction: column;
+    }
+    .sendEmail{
+        height: 25px;
+    }
+    .sendEmail input{
+
+        height: 100%;
+        width: 170px;
+    }
+    .sendEmail button{
+        width: 25px;
+        height: 100%;
+    }
+}

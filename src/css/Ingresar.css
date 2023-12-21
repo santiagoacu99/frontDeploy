@@ -1,0 +1,74 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Montserrat:wght@100;200;300;400;500&family=Mulish:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&family=Philosopher:wght@400;700&family=Roboto:wght@100;300;400;500;700&family=Taviraj:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user{
+    color: #09072c;
+}
+.user h3{
+    font-size: 18px;
+}
+.user input{
+    width: 300px;
+    height: 35px;
+    border: solid 2px rgba(124, 124, 124, 0.27);
+    border-radius: .5rem;
+}
+.button{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    gap: .5rem;
+   
+    
+}
+.button li{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.button li a{
+    width: 100%;
+    justify-content: center;
+    color: white;
+}
+.button a button{
+    width: 100%;
+}
+.color{
+    height: 35px;
+    border: transparent;
+    background-color: #09072c;
+    color: white
+    
+}
+.color:hover{
+    background-color: #35ffd2 ;
+    color: #09072c;
+} 
+.logo1 img{
+    height: 150px;
+}

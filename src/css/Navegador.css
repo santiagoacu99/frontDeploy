@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Montserrat:wght@100;200;300;400;500&family=Mulish:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&family=Philosopher:wght@400;700&family=Roboto:wght@100;300;400;500;700&family=Taviraj:wght@100;200;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.header-container{
+   
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+}
+.nav-bar{
+   padding-bottom: 5px;
+    display: flex;
+    background-color: #09072c;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-bar ul{
+    padding-top: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav-bar ul li{
+    padding-right: 2rem;
+}
+.nav-bar ul li a{
+   display: flex;
+    align-items: flex-end;
+   font-size: 2rem;
+   gap: 5px;
+   color: white;
+}
+.logo img{
+    height: 100px;
+    padding-left: 3rem;
+} 
+.logo img:hover{
+    scale: 1.1;
+    
+    
+}
+.buscador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    border: transparent;
+    padding-left: 30px;
+}
+.buscador input{
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-color: rgb(255, 255, 255);
+    padding-left: 15px;
+    height: 35px;
+    transition: all 0.2s ease 0s;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+} 
+.buscador input:focus{
+ border-color:  #35ffd2;
+
+} 
+.buscador i{
+    position: relative;
+    color: rgb(169, 168, 182);
+    left: -30px;
+}
+.buscador i:hover{
+    color: #35ffd2;
+}
+
+.ingresar a{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+.ingresar:hover a{
+    color: #35ffd2;
+}
+.secondNav{
+    display: flex;
+    border-top: 1px solid rgba(124, 124, 124, 0.27);
+    padding-left: 12rem;
+    background-color: #09072c;
+    height: 2rem;
+}
+.secondNav ul{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+.secondNav li {
+
+    list-style-type:none;
+}
+.secondNav li a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+.secondNav li a:hover{
+   color:  #35ffd2;
+}
+.secondNavConteiner{
+    display: none;
+}
+@media screen and (max-width:850px){
+    .logo img{
+        height: 120px;
+       }
+    .icons ul{
+        padding-left: 0;
+    }
+    
+        .secondNav{
+            
+            width: 100%;
+            height: 15rem;
+            display: none; 
+            padding-left: 2rem;
+            
+        }
+        .secondNavConteiner{
+            display: flex;
+            background-color: #09072c;
+            padding-top: .2rem;
+            border-top: 1px solid rgba(124, 124, 124, 0.27);;
+        }
+        .secondNavConteiner button{
+            display: block;
+            height: 60px;
+            width: 60px;
+            padding-left: 3rem;
+            background-color: transparent;
+            border: transparent;
+            color: white;
+    
+        }
+        .secondNavConteiner button i{
+           font-size: 40px;
+        }
+        .secondNavConteiner button:hover{
+            color: #35ffd2;
+        }
+        .secondNav ul{
+            padding-top: 2rem;
+            flex-direction: column;
+            background-color: #09072c;
+            align-items: flex-start;
+            padding-left: 0;
+            
+        }
+        .secondNav ul li{
+            font-size: 18px;
+    
+        }
+        .secondNav.isActive{
+            display: flex;
+        }
+}
+@media screen and (max-width:480px){
+   .logo img{
+    height: 80px;
+   }
+.icons ul{
+    padding-left: 0;
+}
+   .icons ul li a{
+    font-size: 18px;
+    padding: 0;
+   } 
+    .secondNav{
+        
+        width: 100%;
+        height: 15rem;
+        display: none; 
+        padding-left: 2rem;
+        
+    }
+    .secondNavConteiner{
+        display: flex;
+        background-color: #09072c;
+        padding-top: .2rem;
+        border-top: 1px solid rgba(124, 124, 124, 0.27);;
+    }
+    .secondNavConteiner button{
+        display: block;
+        height: 30px;
+        width: 30px;
+        padding-left: 3rem;
+        background-color: transparent;
+        border: transparent;
+        color: white;
+
+    }
+    .secondNavConteiner button i{
+        font-size: 20px;
+    }
+    .secondNavConteiner button:hover{
+        color: #35ffd2;
+    }
+    .secondNav ul{
+        padding-top: 2rem;
+        flex-direction: column;
+        background-color: #09072c;
+        align-items: flex-start;
+        padding-left: 0;
+        
+    }
+    .secondNav ul li{
+        font-size: 12px;
+
+    }
+    .secondNav.isActive{
+        display: flex;
+    }
+    .icons{
+        width: 100px;
+    }
+    .icons li h3{
+        display: none;
+    }
+}
