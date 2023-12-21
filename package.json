@@ -2,7 +2,6 @@
   "name": "trabajo-final",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://santiagoacu99.gitub.io/ShadowGaming/build",
   "dependencies": {
     "@egjs/react-flicking": "^4.10.10",
     "@testing-library/jest-dom": "^5.17.0",
